@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 import org.junit.Test;
 
-public class MyCalculatorAddTest {
+public class MyCalculatorTestSubtract {
 		Calculator calculator = new Calculator();
 		public static final Logger LOG = Logger.getLogger(Calculator.class.getName());
 		Random random = new Random();
@@ -23,10 +23,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble() *10));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *10));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -41,10 +41,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble()* 100));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *100));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -58,10 +58,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble() *1000));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *1000));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -77,10 +77,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble() *-10));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *-10));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -95,10 +95,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble() *-100));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *-100));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -112,10 +112,10 @@ public class MyCalculatorAddTest {
 		for (int i = 0; i <= 200; i++){
 			firstNumber = Double.valueOf(df.format(random.nextDouble() *-1000));
 			secondNumber = Double.valueOf(df.format(random.nextDouble() *-1000));
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
@@ -127,10 +127,10 @@ public class MyCalculatorAddTest {
 		
 		for (int i = 0; i <= 200; i++){
 	
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			
 			LOG.info("Testing the method add with zero: " + firstNumber + " and " + secondNumber);
-			assertEquals(Math.round(calculator.add(firstNumber, secondNumber)) , Math.round( result));
+			assertEquals(Math.round(calculator.subtract(firstNumber, secondNumber)) , Math.round( result));
 		}
 		
 	}
